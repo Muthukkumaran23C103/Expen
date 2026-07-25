@@ -146,7 +146,7 @@ class _ExpenseFormScreenState extends State<ExpenseFormScreen> {
               ),
               const SizedBox(height: 8),
               DropdownButtonFormField<ExpenseCategory>(
-                value: _selectedCategory,
+                initialValue: _selectedCategory,
                 hint: Text(
                   isEditing ? widget.expense!.categoryName : 'Select Category',
                   style: TextStyle(color: Colors.grey.shade400),

@@ -109,7 +109,7 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                     const SizedBox(height: 12),
                     const Text('Manager:', style: TextStyle(fontWeight: FontWeight.bold)),
                     DropdownButtonFormField<UserModel?>(
-                      value: selectedManager,
+                      initialValue: selectedManager,
                       hint: const Text('Select Manager'),
                       items: [
                         const DropdownMenuItem<UserModel?>(
@@ -192,7 +192,7 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                 Text('Current Manager: ${user.managerName ?? "None"}'),
                 const SizedBox(height: 16),
                 DropdownButtonFormField<UserModel?>(
-                  value: selectedManager,
+                  initialValue: selectedManager,
                   hint: const Text('Select New Manager'),
                   items: [
                     const DropdownMenuItem<UserModel?>(

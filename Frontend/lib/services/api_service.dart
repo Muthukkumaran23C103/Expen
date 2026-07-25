@@ -13,7 +13,7 @@ class ApiException implements Exception {
 }
 
 class ApiService {
-  static const String _defaultBaseUrl = 'https://localhost:5001/api';
+  static const String _defaultBaseUrl = 'http://10.0.2.2:5000';
   static String? _cachedBaseUrl;
   static String? _authToken;
 

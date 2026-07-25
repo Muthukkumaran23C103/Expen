@@ -69,7 +69,7 @@ class _PendingSignupsScreenState extends State<PendingSignupsScreen> {
                     const Text('Assign Manager:', style: TextStyle(fontWeight: FontWeight.bold)),
                     const SizedBox(height: 6),
                     DropdownButtonFormField<UserModel?>(
-                      value: selectedManager,
+                      initialValue: selectedManager,
                       hint: const Text('Select Manager'),
                       items: [
                         const DropdownMenuItem<UserModel?>(
